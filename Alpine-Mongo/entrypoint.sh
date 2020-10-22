@@ -6,6 +6,10 @@
 : ${MONGO_INITDB_ROOT_USERNAME}
 : ${MONGO_INITDB_ROOT_PASSWORD}
 
+exec /usr/bin/weed mount -filer=127.0.0.1:8888 -dir=/data/db -filer.path=/mongodb/ &
+
+sleep 5
+
 # Database owned by mongodb
 [ "$(stat -c %U /data/db)" = mongodb ] || chown -R mongodb /data/db
 
