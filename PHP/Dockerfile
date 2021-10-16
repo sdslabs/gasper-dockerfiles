@@ -4,6 +4,8 @@ ENV NGINX_VERSION 1.17.4
 ENV NJS_VERSION   0.3.5
 ENV PKG_RELEASE   1
 
+RUN apk add --no-cache bash
+RUN apk add git
 RUN set -x \
 # create nginx user/group first, to be consistent throughout docker variants
     && addgroup -g 101 -S nginx \
