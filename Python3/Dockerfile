@@ -1,7 +1,6 @@
 FROM python:3.7.4-alpine3.10
 
 RUN apk --no-cache add curl
-RUN apk add --no-cache bash
-RUN apk add git
+RUN apk add --no-cache git
 
 CMD tail -f /dev/null
