@@ -1,6 +1,6 @@
 FROM python:3.14-rc-alpine3.20
 
-# Install system dependencies for building Python packages and image processing libraries for Pillow
+# Install system dependencies for building Python packages and other image processing libraries for Pillow
 RUN apk add --no-cache \
     build-base \
     jpeg-dev \
