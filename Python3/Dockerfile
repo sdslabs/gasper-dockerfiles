@@ -1,4 +1,4 @@
-FROM python:3.14-rc-alpine3.20
+FROM python:3.11.11-alpine3.21
 
 # Install system dependencies for building Python packages and other image processing libraries for Pillow
 RUN apk add --no-cache \
@@ -19,4 +19,3 @@ RUN apk add --no-cache \
 # Install Python dependencies
 RUN pip install --no-cache-dir --upgrade pip setuptools wheel
 CMD ["tail", "-f", "/dev/null"]
-
