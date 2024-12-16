@@ -1,6 +1,6 @@
-FROM node:8.16.1-alpine
+FROM node:22-alpine3.20
 
 RUN apk --no-cache add curl
 RUN apk add --no-cache git
 
-CMD tail -f /dev/null
+CMD ["tail", "-f", "/dev/null"]
