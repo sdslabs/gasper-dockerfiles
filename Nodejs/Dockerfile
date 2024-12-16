@@ -1,4 +1,4 @@
-FROM node:23-alpine3.20
+FROM node:22-alpine3.20
 
 RUN apk --no-cache add curl
 RUN apk add --no-cache git
