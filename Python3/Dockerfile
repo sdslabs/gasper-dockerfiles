@@ -1,4 +1,4 @@
-FROM python:3.11.11-alpine3.21
+FROM python:3.14.8-alpine3.24
 
 # Install system dependencies for building Python packages and other image processing libraries for Pillow
 RUN apk add --no-cache \

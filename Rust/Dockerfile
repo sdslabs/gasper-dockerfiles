@@ -1,4 +1,4 @@
-FROM rust:1.85.1-alpine3.21
+FROM rust:1.98.1-alpine3.24
 
 RUN apk --no-cache add curl \
     musl-dev \
